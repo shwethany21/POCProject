@@ -1,0 +1,82 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "HubSpot App Suite",
+    "children" : [ {
+      "name" : "Login Test",
+      "children" : [ {
+        "name" : "com.hubspotapp.test.LoginPageTest",
+        "children" : [ {
+          "name" : "verifyLoginPageTitle",
+          "uid" : "dd441964d48c7834",
+          "parentUid" : "3b3cd489154e926b33a1abf80e4669c3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1603815019608,
+            "stop" : 1603815029713,
+            "duration" : 10105
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifySignUpLinkIsDisplayed",
+          "uid" : "653c20a420dbca90",
+          "parentUid" : "3b3cd489154e926b33a1abf80e4669c3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1603815029951,
+            "stop" : 1603815030052,
+            "duration" : 101
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifySignUpLinkTextIsDisplayed",
+          "uid" : "f98aa0f478dfbdbe",
+          "parentUid" : "3b3cd489154e926b33a1abf80e4669c3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1603815030067,
+            "stop" : 1603815030140,
+            "duration" : 73
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifyForgotPasswordLinkIsDisplayed",
+          "uid" : "666de1910819a0c5",
+          "parentUid" : "3b3cd489154e926b33a1abf80e4669c3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1603815030149,
+            "stop" : 1603815030240,
+            "duration" : 91
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verifyLogin",
+          "uid" : "54184f9ccfc63304",
+          "parentUid" : "3b3cd489154e926b33a1abf80e4669c3",
+          "status" : "broken",
+          "time" : {
+            "start" : 1603815030249,
+            "stop" : 1603815051747,
+            "duration" : 21498
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3b3cd489154e926b33a1abf80e4669c3"
+      } ],
+      "uid" : "3a80fbfe71fa84ababeade07e3aec666"
+    } ],
+    "uid" : "cb75f5fab2e3cbc8b263aaa803a2b41b"
+  } ],
+  "name" : "suites"
+}

@@ -1,0 +1,51 @@
+[ {
+  "uid" : "653c20a420dbca90",
+  "name" : "verifySignUpLinkIsDisplayed",
+  "time" : {
+    "start" : 1603815029951,
+    "stop" : 1603815030052,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd441964d48c7834",
+  "name" : "verifyLoginPageTitle",
+  "time" : {
+    "start" : 1603815019608,
+    "stop" : 1603815029713,
+    "duration" : 10105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f98aa0f478dfbdbe",
+  "name" : "verifySignUpLinkTextIsDisplayed",
+  "time" : {
+    "start" : 1603815030067,
+    "stop" : 1603815030140,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54184f9ccfc63304",
+  "name" : "verifyLogin",
+  "time" : {
+    "start" : 1603815030249,
+    "stop" : 1603815051747,
+    "duration" : 21498
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "666de1910819a0c5",
+  "name" : "verifyForgotPasswordLinkIsDisplayed",
+  "time" : {
+    "start" : 1603815030149,
+    "stop" : 1603815030240,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

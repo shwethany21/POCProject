@@ -5,11 +5,13 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.hubspotapp.base.BasePage;
+import com.hubspotapp.base.BaseTest;
 import com.hubspotapp.pages.ContactsPage;
 import com.hubspotapp.pages.HomePage;
 import com.hubspotapp.pages.LoginPage;
@@ -28,12 +30,8 @@ public class ContactsPageTest extends BaseTest{
 	ContactsPage contactsPage;
 	Credentials credentails;
 
-	@BeforeTest
-	public void setUp() {
-		basePage = new BasePage();
-		prop= basePage.init_prop();
-		driver = BasePage.init_driver(prop);
-		loginPage = new LoginPage(driver);
+	@BeforeClass
+	public void homePageSetUp() {
 		credentails = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		homePage = loginPage.doLogin(credentails);
 		contactsPage = new ContactsPage(driver);
@@ -60,12 +58,12 @@ public class ContactsPageTest extends BaseTest{
 		return data;
 	}
 
-   @Test
-   public void createNewContactsList(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
-	   contactsPage.createNewContactsList(email, firstname, lastname, jobtitle, phonenumber);
-   }
-	
-	
+	@Test
+	public void createNewContactsList(String email, String firstname, String lastname, String jobtitle, String phonenumber) {
+		contactsPage.createNewContactsList(email, firstname, lastname, jobtitle, phonenumber);
+	}
+
+
 	@AfterTest()
 	public void tearDown() {
 		driver.quit();

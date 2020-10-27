@@ -1,0 +1,78 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "EPIC 100: Design Login Page Feature for Hub Spot Application",
+    "children" : [ {
+      "name" : "US 101: Design Login Page module with title, sign up and login form",
+      "children" : [ {
+        "name" : "verifyLoginPageTitle",
+        "uid" : "dd441964d48c7834",
+        "parentUid" : "b0f06c62ddd25a3bffd4c16dd561eefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603815019608,
+          "stop" : 1603815029713,
+          "duration" : 10105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifySignUpLinkIsDisplayed",
+        "uid" : "653c20a420dbca90",
+        "parentUid" : "b0f06c62ddd25a3bffd4c16dd561eefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603815029951,
+          "stop" : 1603815030052,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifySignUpLinkTextIsDisplayed",
+        "uid" : "f98aa0f478dfbdbe",
+        "parentUid" : "b0f06c62ddd25a3bffd4c16dd561eefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603815030067,
+          "stop" : 1603815030140,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifyForgotPasswordLinkIsDisplayed",
+        "uid" : "666de1910819a0c5",
+        "parentUid" : "b0f06c62ddd25a3bffd4c16dd561eefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603815030149,
+          "stop" : 1603815030240,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifyLogin",
+        "uid" : "54184f9ccfc63304",
+        "parentUid" : "b0f06c62ddd25a3bffd4c16dd561eefd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1603815030249,
+          "stop" : 1603815051747,
+          "duration" : 21498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0f06c62ddd25a3bffd4c16dd561eefd"
+    } ],
+    "uid" : "aa719c2ea72019073a59bc04c0cbcc98"
+  } ],
+  "name" : "behaviors"
+}

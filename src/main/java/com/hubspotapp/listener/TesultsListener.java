@@ -13,9 +13,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.hubspotapp.base.BasePage;
-import com.tesults.tesults.*;
-
-
 import com.tesults.tesults.Results;
 
 public class TesultsListener extends BasePage implements ITestListener {
@@ -29,7 +26,7 @@ public class TesultsListener extends BasePage implements ITestListener {
 	public static Object[] getTestParams(ITestResult iTestResult) {
 		return iTestResult.getParameters();
 	}
-
+	
 	public byte[] saveScreenshotPNG(WebDriver driver) {
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	}
@@ -92,7 +89,8 @@ public class TesultsListener extends BasePage implements ITestListener {
 	public void onFinish(ITestContext iTestContext) {
 		// Map<String, Object> to hold your test results data.
 		Map<String, Object> data = new HashMap<String, Object>();
-		data.put("target","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjRlM2QxYmJhLTA5ZTEtNGI2Yi05YTQzLTI4OTE2N2U2ZTc1Yy0xNjAzNzA1MTMyMTIyIiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiNWVkYzM5NDYtMDI3Ny00MzJjLWJjNDYtNTAwZDJiMjUxODdiIiwidHlwZSI6InQifQ.HniSFXhhbov7DRQWVXLM_D-H9Xz0PhGXoI__3T5mwAY");
+		data.put("target","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMyNTM4MmJmLWFlMzUtNDQzNC04NDYyLTFjNmE2YTI1MTJlMi0xNjAzODEyOTM5NTA1IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiNWZhZGE4YzMtNzY0My00MTQ2LTk3YjMtYTkyN2Q2MzM2MDU2IiwidHlwZSI6InQifQ.3vQiyRBypjIh1XnZg3FarEdIUSRos2n9wxWA0JTeQSw");
+
 		Map<String, Object> results = new HashMap<String, Object>();
 		results.put("cases", testCases);
 		data.put("results", results);
