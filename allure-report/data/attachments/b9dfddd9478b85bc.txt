@@ -1,1 +1,0 @@
-verifyLogin failed and screenshot taken!
