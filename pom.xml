@@ -37,15 +37,9 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<forkCount>3</forkCount>
-					<reuseForks>true</reuseForks>
+					<reuseForks>false</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<useSystemClassLoader>false</useSystemClassLoader>
-
-
-					<!-- <testFailureIgnore>true</testFailureIgnore> <skip>false</skip> 
-						<reuseForks>false</reuseForks> <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine> 
-						<argLine>-Dfile.encoding=UTF-8</argLine> <useSystemClassLoader>false</useSystemClassLoader> 
-						<includes> <include>**/directory/Test*.java</include> </includes> -->
 
 					<suiteXmlFiles>
 						<suiteXmlFile>src\test\resource\runner\testng.xml</suiteXmlFile>
