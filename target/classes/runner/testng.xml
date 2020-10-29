@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HubSpot App Suite">
+	<listeners>
+		<listener class-name="com.hubspotapp.listener.pdfListener" />
+		<listener
+			class-name="com.hubspotapp.listener.ExtentReportListener" />
+		<listener
+			class-name="com.hubspotapp.listener.TestAllureListener" />
+		<listener
+			class-name="com.hubspotapp.listener.TesultsListener" />
+	</listeners>
+
+	<test name="Login Test">
+		<classes>
+			<!-- <class name="com.hubspotapp.test.ContactsPageTest"/> <class name="com.hubspotapp.test.BaseTest"/> 
+				<class name="com.hubspotapp.test.HomePageTest"/> -->
+			<class name="com.hubspotapp.test.LoginPageTest" />
+			<!-- <class name="com.hubspotapp.test.LoginPageTestInvalidData"/> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
