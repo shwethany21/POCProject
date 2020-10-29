@@ -42,6 +42,8 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src\test\resource\runner\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<useSystemClassLoader>false</useSystemClassLoader>
+
 
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
