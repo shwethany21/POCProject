@@ -4,7 +4,7 @@ agent any
         
         stage ('Build') { 
             steps{
-                echo "Building"
+                echo 'Building'
 
             }
         }
@@ -12,7 +12,7 @@ agent any
         stage('Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    sh "mvn clean install"
+                    sh 'mvn clean install'
                 }
             }
         }
