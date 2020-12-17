@@ -1,8 +1,8 @@
 package com.hubspotapp.test;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import com.hubspotapp.listener.TestAllureListener;
 
 import com.hubspotapp.base.BaseTest;
@@ -20,35 +20,36 @@ import io.qameta.allure.SeverityLevel;
 @Listeners(TestAllureListener.class)
 public class LoginPageTest extends BaseTest {
 
-	@Description("verify Login Page Title Test")
+	@Description("verify Login Page Title")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 1 )
 	public void verifyLoginPageTitle() {
 		String title = loginPage.doGetLoginPageTitle();
 		System.out.println("Login Page title is : " + title);
-		AssertJUnit.assertEquals(title, Appconstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(title, Appconstants.LOGIN_PAGE_TITLE);
 	}
-	
+
 	@Description("Verify Sign Up link is dispalyed")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority =2 )
 	public void verifySignUpLinkIsDisplayed() {
-		AssertJUnit.assertTrue(loginPage.doSignUpLinkIsDisplayed());
+		Assert.assertTrue(loginPage.doSignUpLinkIsDisplayed());
 	}
+
 	@Description("Verify Sign Up link text is dispalyed")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority =3 )
 	public void verifySignUpLinkTextIsDisplayed() {
-		AssertJUnit.assertTrue(loginPage.doSignUpLinkTextIsDisplayed());
+		Assert.assertTrue(loginPage.doSignUpLinkTextIsDisplayed());
 	}
 
 	@Description("Verify Forgot Password link is dispalyed")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority =4 )
 	public void verifyForgotPasswordLinkIsDisplayed() {
-		AssertJUnit.assertTrue(loginPage.doForgotPasswordIsDisplayed());
+		Assert.assertTrue(loginPage.doForgotPasswordIsDisplayed());
 	}
-	
+
 	@Description("Verify user is able to login with valid credentials and verify the account name")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority =5 )
@@ -56,7 +57,7 @@ public class LoginPageTest extends BaseTest {
 		credentails = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		homePage = loginPage.doLogin(credentails);
 		String accountnameis = homePage.getAccountName();
-		AssertJUnit.assertEquals(accountnameis, prop.getProperty("accountname"));
+		Assert.assertEquals(accountnameis, prop.getProperty("accountname"));
 	}
 
 }

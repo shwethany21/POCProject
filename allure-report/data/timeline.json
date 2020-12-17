@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "BM1MC97Y2",
+    "children" : [ {
+      "name" : "17808@BM1MC97Y2.main(1)",
+      "children" : [ {
+        "name" : "verifyLogin",
+        "uid" : "9e3518e7836aa61f",
+        "parentUid" : "8cafe7788e9a0ce5addae6c7b485b359",
+        "status" : "broken",
+        "time" : {
+          "start" : 1604393000529,
+          "stop" : 1604393003591,
+          "duration" : 3062
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifySignUpLinkTextIsDisplayed",
+        "uid" : "a78ea58fbb03e688",
+        "parentUid" : "8cafe7788e9a0ce5addae6c7b485b359",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604393000323,
+          "stop" : 1604393000408,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifyForgotPasswordLinkIsDisplayed",
+        "uid" : "521b7ecf8eaaea0c",
+        "parentUid" : "8cafe7788e9a0ce5addae6c7b485b359",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604393000419,
+          "stop" : 1604393000519,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifyLoginPageTitle",
+        "uid" : "1b711d9f04ddcb7e",
+        "parentUid" : "8cafe7788e9a0ce5addae6c7b485b359",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604392979619,
+          "stop" : 1604392999857,
+          "duration" : 20238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verifySignUpLinkIsDisplayed",
+        "uid" : "c8bb955bc1388a76",
+        "parentUid" : "8cafe7788e9a0ce5addae6c7b485b359",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604393000170,
+          "stop" : 1604393000308,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8cafe7788e9a0ce5addae6c7b485b359"
+    } ],
+    "uid" : "c81b13be2ec8aef4379353e231f505ec"
+  } ],
+  "name" : "timeline"
+}

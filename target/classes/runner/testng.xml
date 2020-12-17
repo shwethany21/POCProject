@@ -9,6 +9,8 @@
 			class-name="com.hubspotapp.listener.TestAllureListener" />
 		<listener
 			class-name="com.hubspotapp.listener.TesultsListener" />
+
+		<listener class-name="Analyzer.MyTransformer" />
 	</listeners>
 
 	<test name="Login Test">
